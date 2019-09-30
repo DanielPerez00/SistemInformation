@@ -2,29 +2,34 @@
 public class SoftwareInfo{
     public static void getSoftwareInfo(){
         System.out.println("\n\n*****Software Information*****\n ");
+        SoftwareInfo.getSistemaOperativo(); 
+        SoftwareInfo.getJavaVersion();
+        SoftwareInfo.getUserName(); 
+        SoftwareInfo.getSistemArch();
+         
+         }
 
+    public static void getSistemaOperativo(){
         String SistemaOperativo = System.getProperty("os.name");
         String SO = String.format("-Sistema Operativo: %s", SistemaOperativo);
 
-        System.out.println(SO);
-       
-        String java_version = System.getProperty("java.version");
-        String version_message = String.format("-Version de Java: %s", java_version);
+        System.out.println(SO);}
+    
+    public static void getJavaVersion(){
+        String JavaVersion = System.getProperty("java.version");
+        String JV = String.format("-Version de Java: %s", JavaVersion);
 
-        System.out.println(version_message);
+        System.out.println(JV);}
 
+    public static void getUserName(){
         String UserName = System.getProperty("user.name");
         String UN = String.format("-Nombre de Usuario: %s", UserName);
 
-        System.out.println(UN);
+        System.out.println(UN);}
 
+    public static void getSistemArch(){
         String SistemArch = System.getProperty("os.arch");
         String SA = String.format("-Arquitectura del Sistema: %s", SistemArch);
 
         System.out.println(SA);
-
-
-        
-    }
-    
-}
+    }}
