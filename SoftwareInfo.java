@@ -5,7 +5,7 @@ public class SoftwareInfo{
         SoftwareInfo.getSistemaOperativo(); 
         SoftwareInfo.getJavaVersion();
         SoftwareInfo.getUserName(); 
-        SoftwareInfo.getSistemArch();
+    
          
          }
 
@@ -27,9 +27,4 @@ public class SoftwareInfo{
 
         System.out.println(UN);}
 
-    public static void getSistemArch(){
-        String SistemArch = System.getProperty("os.arch");
-        String SA = String.format("-Arquitectura del Sistema: %s", SistemArch);
-
-        System.out.println(SA);
-    }}
+    }
